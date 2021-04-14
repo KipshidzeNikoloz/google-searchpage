@@ -1,37 +1,180 @@
+html, body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+} 
+
+header div{
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    position: relative;
+}
+
+#topbar{
+    display: flex;
+    white-space: nowrap;
+    align-items: center;
+    position: relative;
+    padding: 15px 17px;
+}
+ul{
+    margin-top: 0;
+    margin-bottom: 0;
+}
 .googlelogo{
-    position: fixed;
-    padding: 10px;
-    margin-left: 5px;
+    position: relative;
 }
-
-
+/* Search Bar */
+.searchbar{
+    position: relative;
+    margin: 0 auto;
+    margin-left: 40px;
+    padding-left: 8px;
+    display: flex;
+}
 #search{
-    width: 584px;
+    display: flex;
+    width: 695px;
     border-radius: 24px;
-    height: 44px;
+    height: 48px;
     border: 1px solid lightgray;
-    padding-left: 40px;
+    padding-left: 20px;
     background-color: transparent;
-    margin: 30px;
-    padding-right:10px;
+    padding-right: 90px;
     font-size: 16px;
-    vertical-align: top;
 }
-#search:hover {
+
+#search:hover, #search:active {
     box-shadow: 0 1px 6px rgba(0,0,0,0.22);
 }
 
 #search:focus{
+    box-shadow: 0 1px 6px rgba(0,0,0,0.22);
     outline: none;
 }
 
-form div span{
-    color: rgba(0,0,0,0.47);
-    position: absolute;
-    padding: 40px 45px;
-    font-size: 10px;
+#searchbutton, #searchclear{
+    color: rgba(0,0,0,0.37);
+    left: -90px;
+    padding: 9px;
+    position: relative;
+    align-self: center;
 }
 
+#searchbutton {
+    color: rgba(0, 89, 255, 0.80);
+    border-left: 1px solid rgb(226, 226, 226);
+}
+
+/* Right Part Account */
+.account{
+    list-style-type: none;
+    right: 0;
+    position: relative;
+}
+
+.account li{
+    display: inline;
+    padding: 5px;
+}
+
+.profile {
+    border-radius: 50%;
+}
+
+/* Search Navigation */
+header nav {
+    position: relative;
+}
+
+#topnav{
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    z-index: 123;
+    padding: 14px 10px; 
+}
+.navbar{     
+    list-style-type: none;
+    text-align: left; 
+    position: relative;
+    display: flex;
+    margin-left: 120px;
+}
+
+.navbar li, .navbar li a{
+      text-decoration: none;
+      padding: 0 5px;
+      font-size: 14px;
+      color:rgba(0,0,0,0.68);
+}
+
+.navbar li:active, .navbar li a:active{
+    color: rgba(0, 89, 255, 0.80);
+    border-bottom: 3px solid rgba(0, 89, 255, 0.80);
+
+}
+
+#rightnav{
+      position: relative;
+      text-decoration: none;
+      margin-left: 200px;
+}
+
+#selected{
+    color: rgba(0, 89, 255, 0.80);
+    border-bottom: 3px solid rgba(0, 89, 255, 0.80);
+    padding: 0 10px 13px 10px;
+}
+
+/* Stats*/
+#resultnumber {
+    position: relative;
+    font-size: 14px;
+    margin-left: 175px;
+    color:rgba(0,0,0,0.52);
+    margin-bottom: 15px;
+}
+/* Results */
+main {
+    position: relative;
+    margin-left: 175px;
+    padding-right: 1100px;
+}
+
+#results{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.title{
+    font-size: 20px;
+    color: #1a0dab;
+    font-weight: normal;
+    margin-top: 0;
+    padding-top: 3px;
+    margin-bottom: 5px;
+    line-height: 1.5;
+}
+
+.link {
+    font-size: 14px;
+    text-decoration: none;
+    color: rgba(0,0,0,0.92);
+    line-height: 1.5;
+}
+
+.description {
+    font-size: 14px;
+    color: rgba(0,0,0,0.68);
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+main li a{
+    text-decoration: none;
+}
+
+/* Footer */
 .location-tag{
     background-color: #f3f3f3;
     position: relative;

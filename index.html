@@ -9,57 +9,42 @@
 </head>
 <body>
     <header>
-        <div>
-            <img class="googlelogo" alt="Google Logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="width:90px; height:30px;">
-        </div>
-        <div>
-            <form>
-                <div>
-                    <div class="searchbar">
-                        <span class="material-icons-outlined">search</span>
-                        <input name="search" id="search" type="text">
-                        <span class="material-icons-outlined">clear</span>
-                    </div> 
-                </div>
+        <div id="topbar">
+            <img class="googlelogo" alt="Google Logo" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="width:90px; height:31px;">
+            <form class="searchbar">
+                <input name="search" id="search" type="text">
+                <span id="searchclear" class="material-icons-outlined">clear</span>
+                <span id="searchbutton" class="material-icons-outlined">search</span>
             </form>
-        </div>
-        <div>
-            <ul>
+            <ul class="account">
                 <li><a href="https://www.google.ge/intl/en/about/products"><span class="material-icons-outlined">apps</span></a></li>
                 <li><img class="profile" src="https://lh3.googleusercontent.com/ogw/ADGmqu_brDB7ETeteyBTknTDnQz556zidK_dVZRnhOul=s32-c-mo"></li>
             </ul>
         </div>
         <nav>
-            <div>
+            <div id="topnav">
                 <ul class="navbar">
-                    <li><a href="">All</a></li>
+                    <li><a href="" id="selected">All</a></li>
                     <li><a href="">Maps</a></li>
                     <li><a href="">Images</a></li>
                     <li><a href="">Videos</a></li>
                     <li><a href="">News</a></li>
                     <li><a href="">More</a></li>
+                    <li><a href="" id="rightnav">Settings</a></li>
+                    <li><a href="" id="rightnav1">Tools</a></li>  
                 </ul>
-            </div>
-            <div>
-                <ul class="navbar">
-                    <li><a href="">Settings</a></li>
-                    <li><a href="">Tools</a></li>   
-                </ul>
-            </div>
-            <div>
-                <hr>
-            </div>
-            <div id="resultnumber">
-                <p>About 123,000,000 results (0.63 seconds)</p>
             </div>
         </nav>
+        <div id="resultnumber">
+            <p>About 123,000,000 results (0.63 seconds)</p>
+        </div>
     </header>
     <main>
         <ul id="results">
             <li>
                 <a href="">
-                    <h3 class="title">build this webpage - GitHub Pages</h3>
                     <div class="link">https://victor-lf.github.io › google-search-results</div>
+                    <h3 class="title">build this webpage - GitHub Pages</h3>
                 </a>
                 <p class="description">
                     build this webpage. https://benjdelt.github.io/google-results/. With zero coding experience, artist building 180 webpages in 180 days ...
@@ -67,8 +52,8 @@
             </li>
             <li>
                 <a href="">
-                    <h3 class="title">build this webpage - GitHub Pages</h3>
                     <div class="link">https://christine-27.github.io › google-search-results</div>
+                    <h3 class="title">build this webpage - GitHub Pages</h3>                
                 </a>
                 <p class="description">
                     With zero coding experience, artist building 180 webpages . ... days ago, having never done any programming in her life, Jennifer Dewalt built her first webpage.
@@ -76,8 +61,8 @@
             </li>
             <li>
                 <a href="">
-                    <h3 class="title">How to Build a Website 2021 | A Step by Step Beginner's Guide</h3>
                     <div class="link">https://www.websitebuilderexpert.com › building-websi..</div>
+                    <h3 class="title">How to Build a Website 2021 | A Step by Step Beginner's Guide</h3>
                 </a>
                 <p class="description">
                     Apr 6, 2021 — Anyone can build a website with the right tools - and the right guide! We'll show you how to make yours in just 9 steps.
@@ -85,8 +70,8 @@
             </li>
             <li>
                 <a href="">
-                    <h3 class="title">How to Create a Website: Step-by-Step Guide for Beginners ...</h3>
                     <div class="link">https://websitesetup.org</div>
+                    <h3 class="title">How to Create a Website: Step-by-Step Guide for Beginners ...</h3>
                 </a>
                 <p class="description">
                     Jan 25, 2021 — Things You Need In Order to Build a Website · Choose a domain name · Register a domain and sign up with web hosting · Set up a website using ...
@@ -94,8 +79,8 @@
             </li>
             <li>
                 <a href="">
-                    <h3 class="title">How to Create a Website | PCMag</h3>
                     <div class="link">https://www.pcmag.com › ... › Web Hosting</div>
+                    <h3 class="title">How to Create a Website | PCMag</h3>
                 </a>
                 <p class="description">
                     You can use an online service to create web pages, or build it offline using a desktop software tool. Or, if you're a coding dynamo, use a plain text editor to create a ...
@@ -103,8 +88,8 @@
             </li>
             <li>
                 <a href="">
-                    <h3 class="title">IggyDaFool/google-build-this-webpage: A template ... - GitHub</h3>
                     <div class="link">https://victor-lf.github.io › google-search-results</div>
+                    <h3 class="title">IggyDaFool/google-build-this-webpage: A template ... - GitHub</h3>
                 </a>
                 <p class="description">
                     A template design off of the google page for search of "build this webpage" - IggyDaFool/google-build-this-webpage.
@@ -112,8 +97,8 @@
             </li>
             <li>
                 <a href="">
-                    <h3 class="title">build this webpage - GitHub Pages</h3>
                     <div class="link">https://github.com › codepuffin › google-build-this-we...</div>
+                    <h3 class="title">build this webpage - GitHub Pages</h3>
                 </a>
                 <p class="description">
                     1. Determine the primary purpose of your website. · 2. Decide your domain name. · 3. Choose a web host. · 4. Build your pages. · 5. Set up your payment system (if ...
@@ -121,9 +106,8 @@
             </li>
             <li>
                 <a href="">
+                    <div class="link">https://www.businessnewsdaily.com › ... › Technology</html>div>
                     <h3 class="title">How to Build a Business Website - businessnewsdaily.com</h3>
-                    <div class="link">https://www.businessnewsdaily.com › ... › Technology
-                    </div>
                 </a>
                 <p class="description">
                     This site teaches you how to make a website in just 3 easy to follow steps. There's also lots of really useful resources to help you build traffic in 2021.
@@ -131,8 +115,8 @@
             </li>
             <li>
                 <a href="">
-                    <h3 class="title">Make Your Own Website in Just 1 Hour With This Easy Guide ...</h3>
                     <div class="link">https://makeawebsitehub.com</div>
+                    <h3 class="title">Make Your Own Website in Just 1 Hour With This Easy Guide ...</h3>
                 </a>
                 <p class="description">
                     Squarespace is the all-in-one solution for anyone looking to create a beautiful website. Domains, eCommerce, hosting, galleries, analytics, and 24/7 support all ...
@@ -140,8 +124,8 @@
             </li>
             <li>
                 <a href="">
-                    <h3 class="title">Squarespace: Build a Website – Website Builder</h3>
                     <div class="link">https://www.squarespace.com</div>
+                    <h3 class="title">Squarespace: Build a Website – Website Builder</h3>
                 </a>
                 <p class="description">
                     Mar 23, 2021 — Website builder or hosted WordPress? DIY or hire a pro? ... Another approach is to build a website using non-proprietary tools. We'll be ...
@@ -149,8 +133,8 @@
             </li>
             <li>
                 <a href="">
-                    <h3 class="title">How to create a website: The 2021 step-by-step guide | ZDNet</h3>
                     <div class="link">https://www.zdnet.com › Topic › Cloud</div>
+                    <h3 class="title">How to create a website: The 2021 step-by-step guide | ZDNet</h3>
                 </a>
                 <p class="description">
                     build this webpage. https://benjdelt.github.io/google-results/. With zero coding experience, artist building 180 webpages in 180 days ...
